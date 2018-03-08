@@ -13,7 +13,9 @@ client.on('message', message => {
 	}
 
 	if (message.content === 'Food') {
-		message.channel.send('Acar');
+		message.channel.send({
+			file: "https://vignette.wikia.nocookie.net/day-r/images/3/3c/Belaz-0.png"
+		});
 		message.channel.send('Air');
 		message.channel.send('Shawarma');
 	}
