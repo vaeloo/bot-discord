@@ -27,10 +27,8 @@ client.on('message', message => {
 			message.channel.send('4. Pepsi');
 			message.channel.send('5. Red Wine');
 		}
-	}else if (message.content === 'Map' || 'map') {
-		message.channel.send(
-		{
-			file: "https://admin-official.line.me/10610527/contents/show/o/zTWftKV9ge37Jnbygfc2ZHJFCDFhKBfpPb8fU7jCmXlejGxx4lM88GQ51lKTAzsaWDF%252BPl5K9UMNFl99%252BjUecQ%253D%253D.jpg"
-		});
+	}
+	if (message.content === 'Map' || 'map') {
+		message.channel.send({file: "https://www.dropbox.com/s/yqak43zyyoh9hnb/Map%20Day%20R%20Bagus.jpg"});
 	}
 });
