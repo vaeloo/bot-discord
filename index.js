@@ -9,12 +9,11 @@ client.login('NDIxMjk2MzA2OTAwOTU5MjMz.DYLS0w.epKyf1nK1Pe3uell0fZ92Ch28t8');
 
 client.on('message', message => {
     
-    if (message.content === 'help' || 'Help') {
+    if (message.content === 'help' === 'Help') {
     	message.channel.send('List Command');
-    	message.channel.send('============');
-    	message.channel.send('1. Food');
-    	message.channel.send('2. Map');
-    	message.channel.send('3. About');
+    	message.channel.send('Food');
+    	message.channel.send('Map');
+    	message.channel.send('About');
 	}
 
 	if (message.content === 'Food' || 'food') {
@@ -29,6 +28,8 @@ client.on('message', message => {
 		}
 	}
 	if (message.content === 'Map' || 'map') {
-		message.channel.send({file: "https://www.dropbox.com/s/yqak43zyyoh9hnb/Map%20Day%20R%20Bagus.jpg"});
+		message.channel.send({
+			file: "https://www.dropbox.com/s/yqak43zyyoh9hnb/Map%20Day%20R%20Bagus.jpg"
+		});
 	}
 });
